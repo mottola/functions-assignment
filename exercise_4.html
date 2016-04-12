@@ -6,23 +6,22 @@
 </head>
 <body>
    <script>
-        function sayHello(name) {
+        function sayHello(greeting, name) {
             //name is a parameter, but greeting is a global variable
-            console.log(greeting + name);
+            console.log(greeting + " " + name);
         }
 
-        var greeting = "Hello, ";
-        sayHello("Dave");
+        sayHello("Hello,", "Dave");
         /*
             should print "Hello, Dave"
         */
        
-       var greeting = "Whazzup, ";
-       sayHello("Erty");
+        sayHello("Whazzup,", "Erty");
        /*
             should print "Whazzup, Erty"
        */
        
+       sayHello("Konichiwa,", "Rick");
        //TODO: create your own greeting and name
        
        //TODO: rewrite sayHello so that it takes greeting as a parameter instead of using a global variable.

@@ -8,16 +8,23 @@
     <script>
         var sum = 0;
         var number = 0;
+        var average = 0;
         
-        var addToAverage(num) {
+        function addToAverage(num) {
             sum = sum + num;
             number = number + 1;
         }
         
-        var getAverage() {
-            return sum / number;
+        function getAverage() {
+            return console.log(sum / number);
         }
         
+        addToAverage(13);
+        addToAverage(4);
+        addToAverage(134);
+        addToAverage(21);
+        addToAverage(30);
+        getAverage();
         /*
             TODO: Using the functions above, compute and print the average of:
             13, 4, 134, 21, 30
